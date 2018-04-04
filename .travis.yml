@@ -6,9 +6,9 @@ compiler:
 sudo: enabled
 
 script:
-- cmake -e make_directory build
-- cmake -e chdir build cmake ..
-- cmake --build build
+- sudo cmake -E make_directory build
+- sudo cmake -E chdir build cmake ..
+- sudo cmake --build build
 
 matrix:
   include:
