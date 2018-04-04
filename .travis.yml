@@ -8,9 +8,9 @@ sudo: enabled
 script:
 - pwd
 - ls
-- sudo cmake -E make_directory build
-- sudo cmake -E chdir build cmake ..
-- sudo cmake --build build
+- cmake -E make_directory build
+- cmake -E chdir build cmake ..
+- cmake --build build
 
 matrix:
   include:
