@@ -1,7 +1,6 @@
 language: c
 
 compiler:
-  - clang
   - gcc
   
 script:
@@ -13,8 +12,3 @@ matrix:
   include:
   - os: linux
 
-  include:
-  - os: osx
-  
-  include:
-  - os: windows
