@@ -1,0 +1,20 @@
+language: c
+
+compiler:
+  - clang
+  - gcc
+  
+script:
+- cmake -e make_directory build
+- cmake -e chdir build cmake ..
+- cmake --build build
+
+matrix:
+  include:
+  - os: linux
+
+  include:
+  - os: osx
+  
+  include:
+  - os: windows
