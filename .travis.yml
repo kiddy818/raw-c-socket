@@ -2,7 +2,9 @@ language: c
 
 compiler:
   - gcc
-  
+
+sudo: enabled
+
 script:
 - cmake -e make_directory build
 - cmake -e chdir build cmake ..
