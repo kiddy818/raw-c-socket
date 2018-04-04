@@ -6,6 +6,8 @@ compiler:
 sudo: enabled
 
 script:
+- pwd
+- ls
 - sudo cmake -E make_directory build
 - sudo cmake -E chdir build cmake ..
 - sudo cmake --build build
